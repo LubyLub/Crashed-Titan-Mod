@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_juggernaut_2"
+		texturefile = "gfx/event_pictures/origins/GFX_evt_juggernaut_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
