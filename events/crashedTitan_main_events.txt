@@ -1,0 +1,61 @@
+namespace = crashedTitan
+
+event = {
+	id = crashedTitan.1
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = crashedTitan_Installed
+		}
+	}
+	immediate = {
+		set_global_flag = crashedTitan_Installed
+	}
+}
+
+country_event = {
+	id = crashedTitan.2
+	hide_window = no
+	title = crashedTitan.2.name
+	desc = crashedTitan.2.desc
+	picture = GFX_evt_relic_shipyard
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_crashed_titan
+	}
+	immediate = {
+		capital_scope = {
+			add_blocker = {
+				type = d_crashed_titan_blocker
+			}
+		}
+	}
+
+	option = {
+		name = crashedTitan.2.optionA.name
+	}
+}
+
+country_event = {
+	id = crashedTitan.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+	immediate = {
+		add_research_option = tech_ship_armor_2
+		add_modifier = {
+			modifier = crashed_titan_country_modifier
+		}
+		capital_scope = {
+			add_modifier = {
+				modifier = crashed_titan_planet_modifier
+			}
+		}
+	}
+}
+

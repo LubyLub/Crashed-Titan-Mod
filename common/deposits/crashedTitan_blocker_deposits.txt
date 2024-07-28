@@ -1,0 +1,31 @@
+d_crashed_titan_blocker = {
+	icon = d_crashed_ship
+	time = 360
+
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 800
+			alloys = 50
+		}
+	}
+
+	potential = {
+		owner = {
+			has_origin = origin_crashed_titan
+		}
+	}
+
+	on_cleared = {
+		owner = {
+			start_situation = {
+				type = situation_nanotech_consume_planet # Temp situation, fix by replacing with crashed Titan situation
+				target = owner
+			}
+		}
+	}
+}
+

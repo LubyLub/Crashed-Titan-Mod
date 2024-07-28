@@ -7,7 +7,12 @@ origin_crashed_titan = {
 		always = yes
 	}
 	possible = {
-		always = yes
+		ethics = {
+			OR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
 	}
 	
 	max_once_global = yes

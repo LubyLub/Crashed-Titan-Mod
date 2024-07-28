@@ -1,0 +1,57 @@
+crashed_titan_situation = {
+	picture = GFX_evt_relic_shipyard
+	category = positive
+
+	#Endings
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	on_progress_complete = {
+		
+	}
+
+	#Starting Concepts
+	on_start = {
+		from = {
+			set_country_flag = "crashed_titan_situation_started"
+			country_event = {
+				id = crashedTitan.3
+			}
+		}
+	}
+	start_value = 0
+	progress_direction = monodirectional
+
+	#Stages
+	# stages = {
+	# 	stage_1 = {
+
+	# 	}
+	# }
+
+	#Monthly Progress
+	monthly_progress = {
+		base = 0.12
+
+	}
+
+	#Approaches
+	approach = {
+		name = x
+		icon = GFX_evt_juggernaut_2
+		icon_background = GFX_evt_juggernaut_2
+		allow = {
+			
+		}
+		on_select = {
+			
+		}
+		default = yes
+	}
+
+
+	#Modifiers
+
+
+
+	#Events
+}

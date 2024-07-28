@@ -1,0 +1,7 @@
+crashed_titan_planet_modifier = {
+	planet_jobs_engineering_research_produces_mult = 0.1
+
+	icon = gfx/interface/icons/planet_modifiers/pm_city_ruins.dds
+	icon_frame = 1
+}
+

@@ -2,3 +2,20 @@
 
 origin_crashed_titan:0 "Crashed Titan Origin"
 origin_crashed_titan_desc:0 "Before we even industrialized, there had always been a broken ship the size of a titan lying in pieces on our planet surface. Perhaps this is a gift or a warning for what the galaxy holds for us as we step onto the galactic stage."
+
+ d_crashed_titan_blocker:0 "Crashed Titan"
+ d_crashed_titan_blocker_desc:0 "The site of the crashed gigantic ship that has existed from the begging of our civilization"
+
+crashedTitan.2.name:0 "The Crashed Titan"
+crashedTitan.2.desc:0 "From the moment we were born, there had always been the huge ship lying in its crater, half broken, half flawless. Over time, our believes were formed around it. From seeing it as god to a believing it as gift from god. At some point, we understood that it is not a gift but a curse that proves the existence of many stronger than us out there. This proved that we must always be vigilant of the xeno-scum waiting to take us down. We have not gained ftl technology and the ability to travel through space. We now have the technology required to study the gargantuan ship on our planet. All that remains to begin is moving the ship to our labetories for further study."
+crashedTitan.2.optionA.name:0 "OK"
+
+START_SCREEN_CRASHED_TITAN:0 "In the shadow of a colossal relic, your civilization has grown. The ancient Titan, a monument to both wonder and warning, has shaped your people's destiny for generations. Now, as you take your first steps into the stars, the secrets of this fallen giant beckon. Will you unlock its power and claim your place among the cosmos, or will the dangers that felled this behemoth consume you as well? The galaxy awaits, but the greatest mystery lies in your own backyard. Prepare to unravel the enigma of the Titan and forge your empire's future among the stars."
+
+crashed_titan_situation:0 "Crash Titan Study"
+crashed_titan_situation_type:0 "Crashed Titan Recovery"
+crashed_titan_situation_desc:0 "The Titan has been recovered and now awaits exploration in our laboratories. Our scientists strive to unlock its secrets, balancing groundbreaking potential with hidden dangers. The choices we make will shape our future among the stars."
+crashed_titan_situation_monthly_change_tooltip:0 "Continues research and experimentation is taking place in our most advanced laboratories under the true genuis of our civilization."
+
+crashed_titan_planet_modifier:0 "Crashed Titan Laboratory"
+crashed_titan_country_modifier:0 "Crashed Titan Insight"

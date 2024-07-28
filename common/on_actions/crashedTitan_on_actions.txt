@@ -1,0 +1,11 @@
+on_game_start = {
+	events = {
+		crashedTitan.1
+	}
+}
+
+on_game_start_country = {
+	events = {
+		crashedTitan.2
+	}
+}

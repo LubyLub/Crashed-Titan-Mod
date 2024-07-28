@@ -1,0 +1,8 @@
+##Crashed Titan Origin
+part = {
+	location = 0
+	localization = "START_SCREEN_CRASHED_TITAN"
+	trigger = {
+		has_origin = origin_crashed_titan
+	}
+}
