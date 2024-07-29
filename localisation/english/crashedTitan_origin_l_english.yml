@@ -16,6 +16,57 @@ crashed_titan_situation:0 "Crash Titan Study"
 crashed_titan_situation_type:0 "Crashed Titan Recovery"
 crashed_titan_situation_desc:0 "The Titan has been recovered and now awaits exploration in our laboratories. Our scientists strive to unlock its secrets, balancing groundbreaking potential with hidden dangers. The choices we make will shape our future among the stars."
 crashed_titan_situation_monthly_change_tooltip:0 "Continues research and experimentation is taking place in our most advanced laboratories under the true genuis of our civilization."
+crashed_titan_situation_outcome:0 "We have learned all there is from the salvages of the Titan ship. Now is time to stand on the shoulder of the prevoius giants and establish our might."
+crashed_titan_stageA:0 "Studying in an attempt to understand the basics of the ship and whether it could be salvaged."
+crashed_titan_stageBCD:0 "Further study to learn of the technologies used within the ship and to further perfect the Titan."
 
 crashed_titan_planet_modifier:0 "Crashed Titan Laboratory"
 crashed_titan_country_modifier:0 "Crashed Titan Insight"
+recovered_crashed_titan_modifier_A:0 "Salvaged Titan Ship I"
+recovered_crashed_titan_modifier_B:0 "Salvaged Titan Ship I"
+recovered_crashed_titan_modifier_C:0 "Salvaged Titan Ship I"
+
+crashedTitan.4.name:0 "Our own Titan"
+crashedTitan.4.desc:0 "After countless months of research and experimentation, we finally managed to somewhat fix the Titan ship. It can at least fly and operate at 25% of what we deem to be its original power. We have set upon a path that will ensure our place among the stars. The ship is ready for orders in the orbit of our planet."
+crashedTitan.4.optionA.name:0 "EXCELLENT"
+
+crashedTitan.5.name:0 "Required Technologies"
+crashedTitan.5.desc:0 "With the titan fixed enough to take off, we know wish to further our research to fully fix the ship. The first step to achieve this is fixing the hull of the ship. This will require better armor and metal technology. Our main research will focus on the pieces of the ship recovered and its databanks. Let us see where this path will take us."
+crashedTitan.5.optionA.name:0 "ONWARDS!!"
+crashedTitan.5.optionB.name:0 "ONWARDS??"
+
+crashedTitan.6.name:0 "Titan Data Bank"
+crashedTitan.6.desc:0 "From our previous research, we have successfully recovered the basics of certain technologies. With research, our civilization will also be able to master said technologies. Among these are blueprints for both a more advanced ship armor and a form of ship labled as \"Frigates\". Perhaps these technologies are exactly what we need for the rest of of the Titan recovery."
+crashedTitan.6.optionA.name:0 "Yay"
+
+crashedTitan.7.name:0 "Titan Hull Fixed"
+crashedTitan.7.desc:0 "Through extreme amounts of work done by our researchers, we have finally managed to repair the hull of our titan ship. This has vastly improved the ship's capabilities. We are one step closer to the perfect ship, and the title of \"Galactic Overlords\"."
+crashedTitan.7.optionA.name:0 "EXCELLENT"
+
+crashedTitan.8.name:0 "Required Technologies II"
+crashedTitan.8.desc:0 "With the titan's hull fixed, we know wish to further our research to fully fix the ship. The next step is fixing the shields of the ship. This will require better shield technology. Our main research will focus on the pieces of the ship recovered and its databanks. Let us see where this path will take us."
+crashedTitan.8.optionA.name:0 "ONWARDS!!"
+crashedTitan.8.optionB.name:0 "ONWARDS??"
+
+crashedTitan.9.name:0 "Titan Data Bank II"
+crashedTitan.9.desc:0 "From our previous research, we have successfully recovered the basics of certain technologies. With research, our civilization will also be able to master said technologies. Among these are blueprints for both more advanced ship shields and fleet training manuals. Perhaps these technologies are exactly what we need for the rest of of the Titan recovery."
+crashedTitan.9.optionA.name:0 "Yay"
+
+crashedTitan.10.name:0 "Titan Shields Fixed"
+crashedTitan.10.desc:0 "Through extreme amounts of work done by our researchers, we have finally managed to repair the shields of our titan ship. This has vastly improved the ship's capabilities. We are one step closer to the perfect ship, and the title of \"Galactic Overlords\"."
+crashedTitan.10.optionA.name:0 "EXCELLENT"
+
+crashedTitan.11.name:0 "Required Technologies III"
+crashedTitan.11.desc:0 "With the titan's shields fixed, we know wish to further our research to fully fix the ship. The next step is fully fixing the energy weaponary and power core of the ship. This will require better energy laser and power core technology. Our main research will focus on the pieces of the ship recovered and its databanks. Let us see where this path will take us."
+crashedTitan.11.optionA.name:0 "ONWARDS!!"
+crashedTitan.11.optionB.name:0 "ONWARDS??"
+
+crashedTitan.12.name:0 "Titan Data Bank III"
+crashedTitan.12.desc:0 "From our previous research, we have successfully recovered the basics of certain technologies. With research, our civilization will also be able to master said technologies. Among these are blueprints for more advanced ship energy weapons and an extremely advanced power core. Perhaps these technologies are exactly what we need for the rest of of the Titan recovery."
+crashedTitan.12.optionA.name:0 "Yay"
+
+crashedTitan.13.name:0 "Titan Ship Fully Fixed"
+crashedTitan.13.desc:0 "Through extreme amounts of work done by our researchers, we have finally managed have a perfect Titan ship on our hands. We now deserve the title of \"Galactic Overlords\"."
+crashedTitan.13.optionA.name:0 "FINALLY"
+
+NAME_Recovered_CrashedTitan:0 "Recovered Crashed Titan"

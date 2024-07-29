@@ -39,7 +39,7 @@ country_event = {
 	}
 }
 
-country_event = {
+situation_event = {
 	id = crashedTitan.3
 	hide_window = yes
 	is_triggered_only = yes
@@ -47,15 +47,394 @@ country_event = {
 		always = yes
 	}
 	immediate = {
-		add_research_option = tech_ship_armor_2
-		add_modifier = {
-			modifier = crashed_titan_country_modifier
-		}
-		capital_scope = {
-			add_modifier = {
-				modifier = crashed_titan_planet_modifier
+		fromfrom = {
+			add_research_option = tech_ship_armor_2
+			# add_modifier = {
+			# 	modifier = crashed_titan_country_modifier
+			# }
+			capital_scope = {
+				add_modifier = {
+					modifier = crashed_titan_planet_modifier
+				}
 			}
 		}
 	}
 }
 
+situation_event = {
+	id = crashedTitan.4
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.4.name
+	desc = crashedTitan.4.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = crashedTitan.4.optionA.name
+		owner = {
+			create_fleet = {
+				name = RANDOM
+				effect = {
+					set_owner = prev
+					set_location = fromfrom.prev.orbit
+					create_ship_design = {
+						design = "NAME_Recovered_CrashedTitan"
+					}
+					create_ship = {
+						name = RANDOM
+						design = last_created_design
+						graphical_culture = event_target:random_species
+						upgradable = no
+					}
+					save_event_target_as = new_titan_fleet
+				}
+			}
+			remove_ship_design = last_created_design
+			event_target:new_titan_fleet = {
+				every_owned_ship = {
+					limit = {
+						is_ship_size = titan
+					}
+					add_modifier = {
+						modifier = recovered_crashed_titan_modifier_A
+					}
+					save_global_event_target_as = crashed_titan_ship
+				}
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = crashedTitan.5
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.5.name
+	desc = crashedTitan.5.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = crashedTitan.5.optionA.name
+		trigger = {
+			owner = {
+				NOR = {
+					has_technology = tech_ship_armor_3
+				}
+			}
+		}
+
+		set_situation_flag = stage2_lack_of_required_tech
+		owner = {
+			country_event = {
+				id = crashedTitan.6
+			}
+		}
+		
+	}
+	option = {
+		name = crashedTitan.5.optionB.name
+		trigger = {
+			owner = {
+				has_technology = tech_ship_armor_3
+			}
+		}
+		owner = {
+			add_research_option = tech_torpedoes_1
+		}
+	}
+}
+
+country_event = {
+	id = crashedTitan.6
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.6.name
+	desc = crashedTitan.6.desc
+	picture = GFX_evt_engineering_research
+	option = {
+		name = crashedTitan.6.optionA.name
+		add_research_option = tech_ship_armor_3
+		add_research_option = tech_torpedoes_1
+	}
+}
+
+situation_event = {
+	id = crashedTitan.7
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.7.name
+	desc = crashedTitan.7.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = crashedTitan.7.optionA.name
+		owner = {
+			event_target:crashed_titan_ship = {
+				if = {
+					limit = { has_modifier = recovered_crashed_titan_modifier_A }
+					remove_modifier = recovered_crashed_titan_modifier_A
+				}
+				add_modifier = {
+					modifier = recovered_crashed_titan_modifier_B
+				}
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = crashedTitan.8
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.8.name
+	desc = crashedTitan.8.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = crashedTitan.8.optionA.name
+		trigger = {
+			owner = {
+				NOR = {
+					has_technology = tech_shields_3
+				}
+			}
+		}
+
+		set_situation_flag = stage3_lack_of_required_tech
+		owner = {
+			country_event = {
+				id = crashedTitan.9
+			}
+		}
+		
+	}
+	option = {
+		name = crashedTitan.8.optionB.name
+		trigger = {
+			owner = {
+				has_technology = tech_shields_3
+			}
+		}
+		owner = {
+			add_research_option = tech_doctrine_fleet_size_3
+		}
+	}
+}
+
+country_event = {
+	id = crashedTitan.9
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.9.name
+	desc = crashedTitan.9.desc
+	picture = GFX_evt_engineering_research
+	option = {
+		name = crashedTitan.9.optionA.name
+		add_research_option = tech_shields_2
+		add_research_option = tech_shields_3
+		add_research_option = tech_doctrine_fleet_size_3
+	}
+}
+
+situation_event = {
+	id = crashedTitan.10
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.10.name
+	desc = crashedTitan.10.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = crashedTitan.10.optionA.name
+		owner = {
+			event_target:crashed_titan_ship = {
+				if = {
+					limit = { has_modifier = recovered_crashed_titan_modifier_B }
+					remove_modifier = recovered_crashed_titan_modifier_B
+				}
+				add_modifier = {
+					modifier = recovered_crashed_titan_modifier_C
+				}
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = crashedTitan.11
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.11.name
+	desc = crashedTitan.11.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = crashedTitan.11.optionA.name
+		trigger = {
+			owner = {
+				NOR = {
+					has_technology = tech_lasers_4
+					has_technology = tech_zero_point_power
+				}
+			}
+		}
+
+		set_situation_flag = stage4_lack_of_required_tech
+		owner = {
+			country_event = {
+				id = crashedTitan.12
+			}
+		}
+		
+	}
+	option = {
+		name = crashedTitan.11.optionB.name
+		trigger = {
+			owner = {
+				has_technology = tech_lasers_4
+				has_technology = tech_zero_point_power
+			}
+		}
+		owner = {
+			add_research_option = tech_doctrine_fleet_size_4
+		}
+	}
+}
+
+country_event = {
+	id = crashedTitan.12
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.12.name
+	desc = crashedTitan.12.desc
+	picture = GFX_evt_engineering_research
+	option = {
+		name = crashedTitan.12.optionA.name
+		add_research_option = tech_lasers_2
+		add_research_option = tech_lasers_3
+		add_research_option = tech_fusion_power
+		add_research_option = tech_cold_fusion_power
+		add_research_option = tech_antimatter_power
+		add_research_option = tech_zero_point_power
+		add_research_option = tech_doctrine_fleet_size_4
+	}
+}
+
+situation_event = {
+	id = crashedTitan.13
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = crashedTitan.13.name
+	desc = crashedTitan.13.desc
+	picture = GFX_evt_big_landing_ship
+	trigger = {
+		always = yes
+	}
+	immediate = {
+		owner = {
+			event_target:crashed_titan_ship = {
+				if = {
+					limit = { has_modifier = recovered_crashed_titan_modifier_C }
+					remove_modifier = recovered_crashed_titan_modifier_C
+				}
+			}
+			capital_scope = {
+				if = {
+					limit = { has_modifier = crashed_titan_planet_modifier }
+					remove_modifier = crashed_titan_planet_modifier
+				}
+			}
+		}
+		destroy_situation = this
+	}
+	option = {
+		name = crashedTitan.13.optionA.name
+	}
+}
+
+country_event = {
+	id = crashedTitan.14
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		last_increased_tech = tech_ship_armor_3
+	}
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = crashed_titan_situation
+				has_situation_flag = stage2_lack_of_required_tech
+			}
+			remove_situation_flag = stage2_lack_of_required_tech
+		}
+	}
+}
+
+country_event = {
+	id = crashedTitan.15
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		last_increased_tech = tech_shields_3
+	}
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = crashed_titan_situation
+				has_situation_flag = stage3_lack_of_required_tech
+			}
+			remove_situation_flag = stage3_lack_of_required_tech
+		}
+	}
+}
+
+country_event = {
+	id = crashedTitan.16
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			last_increased_tech = tech_lasers_4
+			last_increased_tech = tech_zero_point_power
+		}
+		AND = {
+			has_technology = tech_lasers_4
+			has_technology = tech_zero_point_power
+		}	
+	}
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = crashed_titan_situation
+				has_situation_flag = stage4_lack_of_required_tech
+			}
+			remove_situation_flag = stage4_lack_of_required_tech
+		}
+	}
+}

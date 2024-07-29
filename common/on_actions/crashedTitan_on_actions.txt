@@ -9,3 +9,11 @@ on_game_start_country = {
 		crashedTitan.2
 	}
 }
+
+on_tech_increased = {
+	events = {
+		crashedTitan.14
+		crashedTitan.15
+		crashedTitan.16
+	}
+}

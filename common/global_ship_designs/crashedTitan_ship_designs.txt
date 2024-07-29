@@ -1,0 +1,118 @@
+ship_design = {
+	name = "NAME_Recovered_CrashedTitan"
+	ship_size = titan
+	is_event_design = yes
+	is_special_buildable = yes
+
+	section = {
+		template = "TITAN_BOW"
+		slot = "bow"
+
+		component = {
+			slot = "TITANIC_01"
+			template = "TITAN_LASER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_4"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_4"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_4"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_SHIELD_3"
+		}
+		# component = {
+		# 	slot = "LARGE_UTILITY_6"
+		# 	template = "LARGE_SHIELD_4"
+		# }
+	}
+	section = {
+		template = "TITAN_MID"
+		slot = "mid"
+
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "KINETIC_ARTILLERY_2"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "KINETIC_ARTILLERY_2"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "POINT_DEFENCE_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ARMOR_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ARMOR_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ARMOR_4"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ARMOR_4"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_2"
+		}
+		# component = {
+		# 	slot = "LARGE_UTILITY_6"
+		# 	template = "LARGE_ARCHAEO_ARMOR"
+		# }
+	}
+	section = {
+		template = "TITAN_STERN"
+		slot = "stern"
+
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "KINETIC_ARTILLERY_2"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "KINETIC_ARTILLERY_2"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_HARDENER_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "FIRE_CONTROL_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AFTERBURNER_2"
+		}
+	}
+	required_component="TITAN_ZERO_POINT_REACTOR"
+	required_component="JUMP_DRIVE_1"
+	required_component="COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	required_component="TITAN_SHIP_THRUSTER_5"
+	required_component="SENSOR_4"
+}

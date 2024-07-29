@@ -6,32 +6,74 @@ crashed_titan_situation = {
 	complete_icon = GFX_situation_outcome_positive
 	complete_icon_frame = GFX_situation_outcome_frame_green
 	on_progress_complete = {
-		
+		custom_tooltip = crashed_titan_situation_outcome
+		hidden_effect = {
+			situation_event = {
+				id = crashedTitan.13
+			}
+		}
+		set_situation_locked = yes
 	}
 
 	#Starting Concepts
 	on_start = {
-		from = {
-			set_country_flag = "crashed_titan_situation_started"
-			country_event = {
-				id = crashedTitan.3
-			}
+		situation_event = {
+			id = crashedTitan.3
 		}
 	}
 	start_value = 0
 	progress_direction = monodirectional
 
 	#Stages
-	# stages = {
-	# 	stage_1 = {
-
-	# 	}
-	# }
-
-	#Monthly Progress
-	monthly_progress = {
-		base = 0.12
-
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 25
+			custom_tooltip = crashed_titan_stageA
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			end = 50
+			on_first_enter = {
+				situation_event = {
+					id = crashedTitan.4
+				}
+				situation_event = {
+					id = crashedTitan.5
+				}
+			}
+			custom_tooltip = crashed_titan_stageBCD
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			end = 75
+			on_first_enter = {
+				situation_event = {
+					id = crashedTitan.7
+				}
+				situation_event = {
+					id = crashedTitan.8
+				}
+			}
+			custom_tooltip = crashed_titan_stageBCD
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_outcome_frame_green
+			end = 100
+			on_first_enter = {
+				situation_event = {
+					id = crashedTitan.10
+				}
+				situation_event = {
+					id = crashedTitan.11
+				}
+			}
+			custom_tooltip = crashed_titan_stageBCD
+		}
 	}
 
 	#Approaches
@@ -48,10 +90,27 @@ crashed_titan_situation = {
 		default = yes
 	}
 
+	#Monthly Progress
+	monthly_progress = {
+		base = 0.15
+	}
 
-	#Modifiers
+	#Modifiers/Triggers
+	modifier = {
+		country_engineering_research_produces_mult = 0.05
+	}
 
-
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+			from = {
+				original_owner = yes
+			}
+		}
+	}
 
 	#Events
+
+
 }
