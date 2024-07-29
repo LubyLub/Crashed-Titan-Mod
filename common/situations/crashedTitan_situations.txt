@@ -115,8 +115,10 @@ crashed_titan_situation = {
 			base = 10
 		}
 		modifier = {
-			country_energy_cost_mult = 0.075
-			country_alloys_cost_mult = 0.075
+			country_energy_produces_mult = -0.075
+			country_alloys_produces_mult = -0.075
+			# country_energy_cost_mult = 0.075
+			# country_alloys_cost_mult = 0.075
 		}
 	}
 
@@ -138,8 +140,10 @@ crashed_titan_situation = {
 			base = 1
 		}
 		modifier = {
-			country_energy_cost_mult = 0.15
-			country_alloys_cost_mult = 0.15
+			country_energy_produces_mult = -0.15
+			country_alloys_produces_mult = -0.15
+			# country_energy_cost_mult = 0.15
+			# country_alloys_cost_mult = 0.15
 		}
 	}
 

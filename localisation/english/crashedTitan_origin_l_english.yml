@@ -32,8 +32,8 @@ situation_monthly_progress_stage4_lack_tech: "We do not have enough understandin
 crashed_titan_planet_modifier:0 "Crashed Titan Laboratory"
 crashed_titan_country_modifier:0 "Crashed Titan Insight"
 recovered_crashed_titan_modifier_A:0 "Salvaged Titan Ship I"
-recovered_crashed_titan_modifier_B:0 "Salvaged Titan Ship I"
-recovered_crashed_titan_modifier_C:0 "Salvaged Titan Ship I"
+recovered_crashed_titan_modifier_B:0 "Salvaged Titan Ship II"
+recovered_crashed_titan_modifier_C:0 "Salvaged Titan Ship III"
 
 crashedTitan.4.name:0 "Our own Titan"
 crashedTitan.4.desc:0 "After countless months of research and experimentation, we finally managed to somewhat fix the Titan ship. It can at least fly and operate at 25% of what we deem to be its original power. We have set upon a path that will ensure our place among the stars. The ship is ready for orders in the orbit of our planet."
@@ -82,3 +82,5 @@ NAME_Recovered_CrashedTitan:0 "Recovered Crashed Titan"
 
 mod_country_energy_cost_mult: "Empire Energy Cost"
 mod_country_alloys_cost_mult: "Empire Alloy Cost"
+mod_country_energy_produces_mult: "Energy Production"
+mod_country_alloys_produces_mult: "Alloy Production"
