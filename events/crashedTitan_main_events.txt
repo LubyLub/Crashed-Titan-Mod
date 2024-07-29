@@ -47,7 +47,7 @@ situation_event = {
 		always = yes
 	}
 	immediate = {
-		fromfrom = {
+		owner = {
 			add_research_option = tech_ship_armor_2
 			# add_modifier = {
 			# 	modifier = crashed_titan_country_modifier
@@ -80,7 +80,7 @@ situation_event = {
 				name = RANDOM
 				effect = {
 					set_owner = prev
-					set_location = fromfrom.prev.orbit
+					set_location = prev.capital_scope.orbit
 					create_ship_design = {
 						design = "NAME_Recovered_CrashedTitan"
 					}
@@ -93,7 +93,9 @@ situation_event = {
 					save_event_target_as = new_titan_fleet
 				}
 			}
-			remove_ship_design = last_created_design
+			hidden_effect = {
+				remove_ship_design = last_created_design
+			}
 			event_target:new_titan_fleet = {
 				every_owned_ship = {
 					limit = {
@@ -334,6 +336,7 @@ country_event = {
 		name = crashedTitan.12.optionA.name
 		add_research_option = tech_lasers_2
 		add_research_option = tech_lasers_3
+		add_research_option = tech_lasers_4
 		add_research_option = tech_fusion_power
 		add_research_option = tech_cold_fusion_power
 		add_research_option = tech_antimatter_power

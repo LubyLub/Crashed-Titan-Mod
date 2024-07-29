@@ -19,6 +19,15 @@ crashed_titan_situation_monthly_change_tooltip:0 "Continues research and experim
 crashed_titan_situation_outcome:0 "We have learned all there is from the salvages of the Titan ship. Now is time to stand on the shoulder of the prevoius giants and establish our might."
 crashed_titan_stageA:0 "Studying in an attempt to understand the basics of the ship and whether it could be salvaged."
 crashed_titan_stageBCD:0 "Further study to learn of the technologies used within the ship and to further perfect the Titan."
+crashed_titan_situation_approachA:0 "Gradual Integration"
+crashed_titan_situation_approachB:0 "Accelerated Adaptation"
+crashed_titan_situation_approachC:0 "Titan Ascendancy"
+Gradual_antegration_tooltip: "We will focus on this situation to the same extent as our civilizaton's other projects."
+Accelerated_adaptation_tooltip: "We will greatly focus on this situation as it can revolutionize our military power.\nSituation Speed: §G+50%§!"
+Titan_acendancy_tooltip: "We will put most of our focus on this project as it is the key to the survival of our people.\nSituation Speed: §G+100%§!"
+situation_monthly_progress_stage2_lack_tech: "We do not have enough understanding of ship armors."
+situation_monthly_progress_stage3_lack_tech: "We do not have enough understanding of ship shields."
+situation_monthly_progress_stage4_lack_tech: "We do not have enough understanding of ship weaponary and reactors."
 
 crashed_titan_planet_modifier:0 "Crashed Titan Laboratory"
 crashed_titan_country_modifier:0 "Crashed Titan Insight"
@@ -70,3 +79,6 @@ crashedTitan.13.desc:0 "Through extreme amounts of work done by our researchers,
 crashedTitan.13.optionA.name:0 "FINALLY"
 
 NAME_Recovered_CrashedTitan:0 "Recovered Crashed Titan"
+
+mod_country_energy_cost_mult: "Empire Energy Cost"
+mod_country_alloys_cost_mult: "Empire Alloy Cost"

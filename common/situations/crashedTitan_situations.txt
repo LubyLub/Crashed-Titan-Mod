@@ -78,21 +78,104 @@ crashed_titan_situation = {
 
 	#Approaches
 	approach = {
-		name = x
-		icon = GFX_evt_juggernaut_2
-		icon_background = GFX_evt_juggernaut_2
+		name = crashed_titan_situation_approachA
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_yellow
 		allow = {
-			
+			NOR = {
+				has_situation_flag = stage2_lack_of_required_tech
+				has_situation_flag = stage3_lack_of_required_tech
+				has_situation_flag = stage4_lack_of_required_tech
+			}
 		}
 		on_select = {
-			
+			custom_tooltip = Gradual_antegration_tooltip
+		}
+		ai_weight = {
+			base = 5
 		}
 		default = yes
 	}
 
+	approach = {
+		name = crashed_titan_situation_approachB
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		allow = {
+			NOR = {
+				has_situation_flag = stage2_lack_of_required_tech
+				has_situation_flag = stage3_lack_of_required_tech
+				has_situation_flag = stage4_lack_of_required_tech
+			}
+		}
+		on_select = {
+			custom_tooltip = Accelerated_adaptation_tooltip
+		}
+		ai_weight = {
+			base = 10
+		}
+		modifier = {
+			country_energy_cost_mult = 0.075
+			country_alloys_cost_mult = 0.075
+		}
+	}
+
+	approach = {
+		name = crashed_titan_situation_approachC
+		icon = GFX_situation_approach_fleet
+		icon_background = GFX_situation_approach_bg_green
+		allow = {
+			NOR = {
+				has_situation_flag = stage2_lack_of_required_tech
+				has_situation_flag = stage3_lack_of_required_tech
+				has_situation_flag = stage4_lack_of_required_tech
+			}
+		}
+		on_select = {
+			custom_tooltip = Titan_acendancy_tooltip
+		}
+		ai_weight = {
+			base = 1
+		}
+		modifier = {
+			country_energy_cost_mult = 0.15
+			country_alloys_cost_mult = 0.15
+		}
+	}
+
 	#Monthly Progress
 	monthly_progress = {
-		base = 0.15
+		base = 0.14
+		modifier = {
+			mult = 0
+			desc = situation_monthly_progress_stage2_lack_tech
+			has_situation_flag = stage2_lack_of_required_tech
+		}
+		modifier = {
+			mult = 0
+			desc = situation_monthly_progress_stage3_lack_tech
+			has_situation_flag = stage3_lack_of_required_tech
+		}
+		modifier = {
+			mult = 0
+			desc = situation_monthly_progress_stage4_lack_tech
+			has_situation_flag = stage4_lack_of_required_tech
+		}
+		modifier = {
+			mult = 1
+			desc = Gradual_antegration_tooltip
+			current_situation_approach = crashed_titan_situation_approachA
+		}
+		modifier = {
+			mult = 1.5
+			desc = Accelerated_adaptation_tooltip
+			current_situation_approach = crashed_titan_situation_approachB
+		}
+		modifier = {
+			mult = 2
+			desc = Titan_acendancy_tooltip
+			current_situation_approach = crashed_titan_situation_approachC
+		}
 	}
 
 	#Modifiers/Triggers
@@ -109,8 +192,5 @@ crashed_titan_situation = {
 			}
 		}
 	}
-
 	#Events
-
-
 }

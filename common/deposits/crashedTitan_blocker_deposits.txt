@@ -22,7 +22,7 @@ d_crashed_titan_blocker = {
 	on_cleared = {
 		owner = {
 			start_situation = {
-				type = situation_nanotech_consume_planet # Temp situation, fix by replacing with crashed Titan situation
+				type = crashed_titan_situation 
 				target = owner
 			}
 		}
