@@ -14,8 +14,11 @@ d_crashed_titan_blocker = {
 	}
 
 	potential = {
-		owner = {
-			has_origin = origin_crashed_titan
+		if = {
+			limit = { has_owner = yes }
+			owner = {
+				has_origin = origin_crashed_titan
+			}
 		}
 	}
 

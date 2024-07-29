@@ -80,7 +80,7 @@ situation_event = {
 				name = RANDOM
 				effect = {
 					set_owner = prev
-					set_location = prev.capital_scope.orbit
+					set_location = prev.capital_scope
 					create_ship_design = {
 						design = "NAME_Recovered_CrashedTitan"
 					}
