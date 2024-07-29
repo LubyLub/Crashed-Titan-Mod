@@ -3,7 +3,6 @@ This mod creates an origin that adds blockers and a specific situation. The whol
 
 ## Installation
 Utilize steam workshop for perfect integration with game files.
-URL: 
 
 
 
