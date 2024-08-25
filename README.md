@@ -20,7 +20,7 @@ This mod introduces a new origin for Stellaris that adds unique blockers and a s
 
 ### Manual Installation
 
-1. Navigate to `C:\Users\%USER%\Documents\Paradox Interactive\Stellaris\mod`.
+1. Navigate to `C:\Users\%USER%\Documents\Paradox Interactive\Stellaris\mod` or create the mod directory if not present.
 2. Create a new folder named `crashedTitan`.
 3. Clone or download this repository into the `crashedTitan` folder.
 4. Create a new file named `crashedTitan.mod` in the `mod` folder.
