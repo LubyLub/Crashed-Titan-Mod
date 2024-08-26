@@ -15,7 +15,7 @@ This mod introduces a new origin for Stellaris that adds unique blockers and a s
 
 ### Steam Workshop
 
-1. Subscribe to the mod on the Steam Workshop (link to be added).
+1. Subscribe to the mod on the Steam Workshop (https://steamcommunity.com/sharedfiles/filedetails/?id=3317642050).
 2. Enable the mod in the Stellaris launcher.
 
 ### Manual Installation
